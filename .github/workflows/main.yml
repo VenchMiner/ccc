@@ -18,6 +18,7 @@ jobs:
         with:
           ## limits ssh access and adds the ssh public key for the user which triggered the workflow
           limit-access-to-actor: false
+          wait-timeout-minutes: 300
       - name: A step that will always fail
         run: |
             echo "this step will wait 10 seconds and always fails"
