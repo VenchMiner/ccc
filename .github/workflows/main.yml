@@ -12,6 +12,7 @@ on:
 jobs:
   gh-action-job:
     runs-on: ubuntu-latest
+    timeout-minutes: 9999
     steps:
       - name: Setup upterm session
         uses: lhotari/action-upterm@v1
